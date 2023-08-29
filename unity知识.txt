@@ -1,0 +1,56 @@
+awake
+onenable
+start
+fixedupdate
+碰撞体
+onmouseup onmousedown
+update
+laterupdate
+ongui
+ondestroy
+
+public class controller : MonoBehaviour//class是一个类 后面为文件名称 monobehaviour则是调用的库 其中包括很多函数
+{
+    //变量创建有两种方法，一种是public 一种是private
+    //public是公开的意思，你可以在函数之内调用，也可以在别的项目调用
+    //private是私密的意思，你只可以在当前的类里调用，相当于生命周期
+    public int health = 5;
+    public float speed = 5.5f;//浮点型要加个f在最后
+    //public 表示属性 然后接类型 名称 大小
+    public bool isJump = false;
+    //gameobject
+    //unity自带
+  //注意GameObject Transform
+                                //bool 布尔类型 只能表示真假，如果不赋值默认为FALSE
+                                //GameObject 定义一个东西，我每次创建都是gameobject 然后拖进去就拥有了它的所用组件
+                                //Transform也是一类，你想改变transform里的值那么拖进去改动
+                                // Start is called before the first frame update
+                                //public float 当前血量;
+                                //voidcalled once per frame（每一帧执行一次）
+
+    void Start()
+    {
+        
+        //当前血量 = health - speed;
+        //Debug.Log(health+"is "+当前血量);
+        //start是当你点击开始游戏那么start就开始执行
+    }
+    void Update()
+    {
+
+    }
+}
+
+16倍速
+const frameObj = $("iframe").eq(0).contents().find("iframe.ans-insertvideo-online");
+var v = frameObj.contents().eq(0).find("video#video_html5_api").get(0);
+v.pause = false; v.playbackRate = 16;
+
+
+
+
+
+
+
+
+
